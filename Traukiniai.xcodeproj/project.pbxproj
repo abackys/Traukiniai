@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365984A20D83DB077BA19158 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55DA0F6448CA176A4D42207 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FAFEF7F11B3894F500382195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEF7F01B3894F500382195 /* AppDelegate.swift */; };
 		FAFEF7F31B3894F500382195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEF7F21B3894F500382195 /* ViewController.swift */; };
 		FAFEF7F61B3894F500382195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFEF7F41B3894F500382195 /* Main.storyboard */; };
 		FAFEF7F81B3894F500382195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFEF7F71B3894F500382195 /* Images.xcassets */; };
 		FAFEF7FB1B3894F500382195 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFEF7F91B3894F500382195 /* LaunchScreen.xib */; };
 		FAFEF8071B3894F500382195 /* TraukiniaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEF8061B3894F500382195 /* TraukiniaiTests.swift */; };
+		FAFEF8131B3896B600382195 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAFEF8121B3896B600382195 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B44D2F5955418576473887EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E202C1BD3C81C6450AA09471 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E55DA0F6448CA176A4D42207 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFEF7EB1B3894F500382195 /* Traukiniai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traukiniai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFEF7EF1B3894F500382195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFEF7F01B3894F500382195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		FAFEF8001B3894F500382195 /* TraukiniaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraukiniaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFEF8051B3894F500382195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFEF8061B3894F500382195 /* TraukiniaiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraukiniaiTests.swift; sourceTree = "<group>"; };
+		FAFEF8121B3896B600382195 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365984A20D83DB077BA19158 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D95F24CEC83F2D38646060A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B44D2F5955418576473887EC /* Pods.debug.xcconfig */,
+				E202C1BD3C81C6450AA09471 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2CB0024E9B99F9182C65F286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E55DA0F6448CA176A4D42207 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAFEF7E21B3894F500382195 = {
 			isa = PBXGroup;
 			children = (
 				FAFEF7ED1B3894F500382195 /* Traukiniai */,
 				FAFEF8031B3894F500382195 /* TraukiniaiTests */,
 				FAFEF7EC1B3894F500382195 /* Products */,
+				0D95F24CEC83F2D38646060A /* Pods */,
+				2CB0024E9B99F9182C65F286 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +116,7 @@
 		FAFEF7EE1B3894F500382195 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAFEF8121B3896B600382195 /* Podfile */,
 				FAFEF7EF1B3894F500382195 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -119,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFEF80A1B3894F500382195 /* Build configuration list for PBXNativeTarget "Traukiniai" */;
 			buildPhases = (
+				50FE1D946DC93B090B46CB22 /* Check Pods Manifest.lock */,
 				FAFEF7E71B3894F500382195 /* Sources */,
 				FAFEF7E81B3894F500382195 /* Frameworks */,
 				FAFEF7E91B3894F500382195 /* Resources */,
+				938493876F00B67D45463AFF /* Embed Pods Frameworks */,
+				43EED1757B8E3FB87A1A9A1C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +224,7 @@
 			files = (
 				FAFEF7F61B3894F500382195 /* Main.storyboard in Resources */,
 				FAFEF7FB1B3894F500382195 /* LaunchScreen.xib in Resources */,
+				FAFEF8131B3896B600382195 /* Podfile in Resources */,
 				FAFEF7F81B3894F500382195 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +237,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43EED1757B8E3FB87A1A9A1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50FE1D946DC93B090B46CB22 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		938493876F00B67D45463AFF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAFEF7E71B3894F500382195 /* Sources */ = {
@@ -338,6 +417,7 @@
 		};
 		FAFEF80B1B3894F500382195 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44D2F5955418576473887EC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Traukiniai/Info.plist;
@@ -348,6 +428,7 @@
 		};
 		FAFEF80C1B3894F500382195 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E202C1BD3C81C6450AA09471 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Traukiniai/Info.plist;
@@ -409,6 +490,7 @@
 				FAFEF80C1B3894F500382195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAFEF80D1B3894F500382195 /* Build configuration list for PBXNativeTarget "TraukiniaiTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +499,7 @@
 				FAFEF80F1B3894F500382195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
