@@ -186,6 +186,8 @@
 		FAFEF7E31B3894F500382195 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = opendev;
 				TargetAttributes = {
